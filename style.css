@@ -1,0 +1,17 @@
+.button{
+    border-radius: 5px;
+    border: none;
+    background-color: pink;
+    color: #FFFF;
+    text-align: center;
+    font-size: 28px;
+    margin: 3px;
+}
+
+.button:hover{
+    background-color: palevioletred;}
+
+.button:active{
+    background-color: 3e8e41;
+    box-shadow: 0px #666;
+} 

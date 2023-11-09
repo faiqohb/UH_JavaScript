@@ -1,0 +1,17 @@
+<span>Alas</span>
+<input type="number" id="alas">
+<span>Tinggi</span>
+<input type="number" id="tinggi">
+<button onclick="proses()">Hitung</button>
+<p id="hasil"></p>
+
+<script>
+  function proses(){
+    var a = document.getElementById('alas').value
+    var t = document.getElementById('tinggi').value
+    var output = document.getElementById('hasil')
+
+    var rumus = 0.5 * a * t
+    output.innerHTML = rumus;
+  }
+</script>

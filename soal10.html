@@ -1,0 +1,19 @@
+<span>Tahun</span>
+<input type="number" id="tahunInput">
+<button onclick="cekTK()">Cek</button>
+<p id="hasilTK"></p>
+    <script>
+        function cekTK() {
+            var tahunInput = document.getElementById("tahunInput").value;
+            var tahun = parseInt(tahunInput);
+
+            if (tahun % 4 === 0)
+            {
+                document.getElementById("hasilTK").textContent = tahun + " adalah tahun kabisat";
+            }
+            else
+            {
+                document.getElementById("hasilTK").textContent = tahun + " bukan tahun kabisat";
+            }
+        }
+    </script>

@@ -1,0 +1,26 @@
+<span>Hewan</span>
+<input type="text" id="hewanInput">
+<button onclick="tampilkanSuara()">Suara</button>
+<p id="hasilSuara"></p>
+
+<script>
+    function tampilkanSuara() {
+    var hewanInput = document.getElementById("hewanInput").value.toLowerCase();
+
+    var suaraHewan = {
+    kucing: "meong",
+    anjing: "guguk"
+    };
+
+  if (suaraHewan.hasOwnProperty(hewanInput))
+    {
+    document.getElementById("hasilSuara").innerHTML = suaraHewan[hewanInput];
+    }
+    else
+    {
+    document.getElementById("hasilSuara").innerHTML = "Suara hewan tidak ditemukan.";
+    }
+}
+
+
+</script>
